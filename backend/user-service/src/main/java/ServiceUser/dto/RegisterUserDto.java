@@ -8,7 +8,7 @@ import jakarta.validation.constraints.Size;
 import lombok.Getter;
 
 @Getter
-public class UserDto {
+public class RegisterUserDto {
     @Size(min = 3, max = 20, message = "name must be between 3 and 20 characters")
     @NotBlank(message = "name cannot be blank")
     private String name;
