@@ -16,6 +16,6 @@ public class UserModel {
     private String name;
     private String email;
     private String password;
-    private Role role = Role.CLIENT;
+    private Role role;
     private String avatar;
 }
