@@ -1,13 +1,13 @@
-package com.example.buy_01;
+package api_gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Buy01Application {
+public class ApiGatewayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Buy01Application.class, args);
+		SpringApplication.run(ApiGatewayApplication.class, args);
 	}
 
 }
