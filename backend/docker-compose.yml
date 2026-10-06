@@ -1,0 +1,33 @@
+services:
+
+  user-db:
+    image: mongo:8
+    container_name: user-db
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - user-db-data:/data/db
+
+  product-db:
+    image: mongo:8
+    container_name: product-db
+    restart: unless-stopped
+    ports:
+      - "27018:27017"
+    volumes:
+      - product-db-data:/data/db
+
+  media-db:
+    image: mongo:8
+    container_name: media-db
+    restart: unless-stopped
+    ports:
+      - "27019:27017"
+    volumes:
+      - media-db-data:/data/db
+
+volumes:
+  user-db-data:
+  product-db-data:
+  media-db-data:
