@@ -3,7 +3,6 @@ package ServiceMedia.service;
 import org.apache.tika.Tika;
 import org.apache.tika.io.TikaInputStream;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import ServiceMedia.models.MediaModel;
@@ -21,7 +20,6 @@ import java.nio.file.StandardCopyOption;
 public class MediaService {
 
     private final MediaRepository mediaRepository;
-    private final MongoTemplate mongoTemplate;
 
     @Value("${media.upload.directory:uploads}")
     private String uploadDirectory;
