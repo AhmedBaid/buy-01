@@ -2,6 +2,9 @@ package ServiceMedia.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import ServiceMedia.dto.MediaResponse;
+import ServiceMedia.models.MediaModel;
 import ServiceMedia.service.ProductImageService;
 import lombok.RequiredArgsConstructor;
 
